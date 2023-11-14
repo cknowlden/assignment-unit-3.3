@@ -71,7 +71,7 @@ console.log('7. Looping through supplyChanges to populate more arrays with posit
 let stretchPositives = [];
 let stretchNegatives = [];
 let stretchZeroes = [];
-for (let amount of supplyChanges) {  
+for (let amount of supplyChanges){  
   if (amount > 0){
     stretchPositives.push(amount);
   }
@@ -90,7 +90,12 @@ console.log(`The stretch zeroes are ${stretchZeroes}`);
 //    Then, write a loop that adds each value of the 'supplyChanges'
 //    array to the 'totalParts' variable.
 console.log('8. Looping through supplyChanges to calculate the sum:');
-
+console.log(`The list of supply changes is ${supplyChanges}`);
+let totalParts = 0;
+for (i=0; i<supplyChanges.length; i++) {  
+    totalParts += supplyChanges[i];
+  }
+  console.log('The total number of parts is', totalParts);
 
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. There are 572
