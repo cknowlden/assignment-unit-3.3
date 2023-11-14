@@ -109,7 +109,15 @@ for (i=0; i<supplyChanges.length; i++) {
 //    "left over," and the value of 'boxesFilled' should reflect
 //    how many boxes were filled.
 console.log('9. Filling boxes with a "while" loop');
+let parts = 572;
+let boxesFilled = 0;
+let leftOver;
 
+while (parts >= 7){
+    boxesFilled++;
+    leftOver = (parts -= 7);
+}
+console.log('The number of parts leftover is', leftOver, ' and the number of boxes that were filled is', boxesFilled);
 
 
 
